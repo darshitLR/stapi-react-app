@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anime",
+  "info": {
+    "singularName": "animes",
+    "pluralName": "anime",
+    "displayName": "Anime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "episodes": {
+      "type": "integer"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "release": {
+      "type": "date"
+    }
+  }
+}
