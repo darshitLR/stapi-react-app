@@ -1,8 +1,8 @@
 import React from "react";
 import { imgUrl } from "../../util/helperFunctions";
 
-const AnimeCard = ({ anime, position }) => {
-    console.log('position: ', position);
+const AnimeCard = ({ anime={}, position=true }) => {
+
 
     const { title, description, release, rank, genre, episodes, image
     } = anime
@@ -38,7 +38,7 @@ const AnimeCard = ({ anime, position }) => {
                             <p className="leading-relaxed">Episodes</p>
                         </div>
                     </div>
-                   { !position && <div className="lg:w-1/2 px-2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+                    {!position && <div className="lg:w-1/2 px-2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
                         <img className="object-cover object-center w-full h-full" src={imgUrl(url)} alt="stats" />
                     </div>}
 

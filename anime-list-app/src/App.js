@@ -1,11 +1,12 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Layout from "./containers/Layout";
 import "./index.css"
+import { router } from "./routers/router";
 
 function App() {
   return (
     <div className="App">
-    <Layout/>
+    <RouterProvider router={router} fallbackElement={<h1 className="text-5xl">Loading..</h1>}/>
     </div>
   );
 }
